@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* --- 1. AUKUSTINLABS CORPORATE THEME --- */
+:root {
+  --color-navy: #003366;
+  --color-sky: #66C2E0;
+  --color-accent: #D32F2F;
+  --color-bg: #ffffff;
+  --color-text: #1E293B;
+  --color-soft-gray: #F8FAFC;
+  --color-border: #E2E8F0;
+}
+
+/* --- 2. BASE RESET & TYPOGRAPHY --- */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-navy);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* --- 3. CUSTOM PROFESSIONAL CLASSES --- */
+/* Pure CSS to bypass Tailwind v4 compilation errors */
+
+/* The sleek red underline link */
+.link-detail {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.link-detail:hover {
+  color: var(--color-navy);
+  border-color: var(--color-navy);
+  letter-spacing: 0.05em;
+}
+
+/* Structural offset shadow for lab images */
+.engineering-frame {
+  box-shadow: 20px 20px 0px 0px var(--color-soft-gray);
+  border: 1px solid var(--color-border);
+  transition: transform 0.4s ease;
+  background-color: var(--color-bg);
+}
+
+.engineering-frame:hover {
+  transform: translate(-5px, -5px);
+}
+
+/* Smooth hover effect for Service/Project cards */
+.card-hover-effect {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  transition: all 0.4s ease;
+}
+
+.card-hover-effect:hover {
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
